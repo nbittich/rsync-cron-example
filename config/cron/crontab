@@ -1,0 +1,2 @@
+* * * * * rsync -avz -e "ssh -o StrictHostKeyChecking=no" root@server1:/server1files /mesbackups/server1 >> /var/log/cron1.log 2>&1
+* * * * * rsync -avz -e "ssh -o StrictHostKeyChecking=no" root@server2:/server2files /mesbackups/server2 >> /var/log/cron2.log 2>&1
