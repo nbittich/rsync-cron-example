@@ -3,7 +3,7 @@ services:
     build:
       context: Dockerfiles/ubuntu/.
     volumes:
-        - ./data/sever1/:/server1files
+        - ./data/server1/:/server1files
     networks:
       example:
 
@@ -11,7 +11,7 @@ services:
     build:
       context: Dockerfiles/ubuntu/.
     volumes:
-        - ./data/sever2/:/server2files
+        - ./data/server2/:/server2files
     networks:
       example:
   cron:
