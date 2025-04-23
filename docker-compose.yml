@@ -20,6 +20,10 @@ services:
     volumes:
         - ./config/cron/crontab:/backupcron
         - ./data/backup:/mesbackups
+        - ./config/scripts:/backupscript
+        - ./config/cron/passphrase:/.passphrase
+    environment:
+        GPG_PASSPHRASE: coucou
     command: bash -c "crontab /backupcron -u root && cron -f"
     networks:
       example:
