@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe;
+set -e;
 
 FOLDER_TO_BACKUP=$1;
 ARCHIVE=$2;
